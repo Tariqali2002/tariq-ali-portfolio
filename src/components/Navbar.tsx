@@ -1,4 +1,4 @@
-﻿"use client";
+"use client";
 
 import React, { useState, useEffect } from "react";
 import { motion } from "framer-motion";
@@ -92,7 +92,7 @@ export default function Navbar() {
           <motion.a
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
-            href={portfolioData.personal.github}
+            href={(portfolioData.personal as any).github}
             target="_blank"
             rel="noopener noreferrer"
             aria-label="GitHub Profile"
@@ -104,7 +104,7 @@ export default function Navbar() {
           <motion.a
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
-            href={portfolioData.personal.linkedin}
+            href={(portfolioData.personal as any).linkedin}
             target="_blank"
             rel="noopener noreferrer"
             aria-label="LinkedIn Profile"
@@ -160,7 +160,7 @@ export default function Navbar() {
           ))}
           <div className="pt-4 mt-2 border-t border-[#E2E8F0] flex items-center gap-3">
             <a
-              href={portfolioData.personal.github}
+              href={(portfolioData.personal as any).github}
               target="_blank"
               rel="noopener noreferrer"
               className="flex-1 py-3 text-center rounded-xl border border-[#E2E8F0] text-xs font-semibold text-[#0F172A] bg-white shadow-sm"
