@@ -26,8 +26,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className={`${jakarta.variable} ${jetbrainsMono.variable} dark`} suppressHydrationWarning>
-      <body className="bg-greige-50 dark:bg-[#06080D] text-greige-600 dark:text-slate-100 font-sans antialiased transition-colors duration-300 overflow-x-hidden" suppressHydrationWarning>
+    <html lang="en" className={`${jakarta.variable} ${jetbrainsMono.variable} light`} suppressHydrationWarning>
+      <body className="bg-[#FCEAE7] text-[#0F172A] font-sans antialiased overflow-x-hidden" suppressHydrationWarning>
         <div className="relative z-10" suppressHydrationWarning>{children}</div>
       </body>
     </html>
